@@ -1,17 +1,61 @@
 @charset "UTF-8";
-/***** breakpoints *****/
+
+/* importação de font (google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prociono&display=swap');
+
+/* CSS Reset (Compartilhar Com Todos Navegadores)*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* layout */
+body {
+    font-family: "Prociono", serif;
+    font-size: 1em; /* 1em = 100% (Tamanho Padrão) */
+}
+
+.container {
+    margin: 0 auto; /* Centraliza o Bloco */
+}
+
+
+
+
 /* smartphone  portrait */
+/* Cabecalho */
+header{
+    height: 100px;
+    background-color: red;
+    
+}
+#logo img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px 0px 0px 0px;
+}
 
 /*/
 
 
 
+
 /* smartphone  landscape */
 @media (min-width: 576px) {
-    body {
-        background-color: rgba(136, 0, 0, 0);
+    /* Cabecalho */
+    #logo img {
+        width: 10px 0px 0px 0px;
     }
+    .container {
+        width: 540px;
+        background-color: red
+    }
+   
 }
+
+
 
 
 
@@ -21,9 +65,19 @@
 
 /* tablet portrait */
 @media (min-width: 768px) {
-    body {
-        background-color: rgb(97, 18, 235);
+    /* Cabecalho */
+    .container {
+        max-width: 720px;
+        background-color: rgb(255, 0, 0);
     }
+    header {
+        height: 110px;
+    }
+    #logo img {
+        width: 100px;
+        height: 100px;
+    }
+   
 }
 
 /*/
@@ -33,9 +87,12 @@
 
 /* tablet  landscape */
 @media (min-width: 992px) {
-    body {
-        background-color: rgb(248, 12, 12);
-    }
+  /* .container */
+  .container {
+    max-width: 960px;
+    background-color: red;
+  }
+
 }
 
 
@@ -44,17 +101,40 @@
 
 
 /* PCs / Notebooks */@media (min-width: 1200px) {
+    /* cabecalho */
+    .container {
+        max-width: 1140px;
+        background-color: #ff0000;
+    }
+    header {
+        height: 150px;
+    }
+    #logo img {
+        width: 120px;
+        height: 120px;
+    }
+
+}
    
 
 
 /*/
 
 /* Telas fullHD / 4k /SmartTV */@media (min-width: 1400px) {
-    body {
-        background-color: rgb(119, 0, 255);
-        color: beige;
+    .container {
+        max-width: 1360px;
+        background-color: rgb(255, 9, 9);
     }
+    header {
+        height: 200px;
+    }
+    #logo img {
+        width: 176px;
+        height: 176px;
+    }
+
 }
+    
 
 
 
