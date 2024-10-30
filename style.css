@@ -1,74 +1,189 @@
 @charset "UTF-8";
 
-/* importação de font (google fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prociono&display=swap');
+/* Importação de font (google fontes) */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
 
-/* CSS Reset (Compartilhar Com Todos Navegadores)*/
+/* CSS Reset (compatibilizar com todos navegadores)*/
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* layout */
+/* Layout */
 body {
-    font-family: "Prociono", serif;
-    font-size: 1em; /* 1em = 100% (Tamanho Padrão) */
+    font-family: "Arima", serif;
+    font-size: 1em; /* em - 100% (Tamanho Padrão) */
 }
 
-.container {
-    margin: 0 auto; /* Centraliza o Bloco */
+.container{
+    margin: 0 auto; /* centralizar o bloco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.botao {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #ff0000;
+    width: 160px;
+    padding: 11px 0px;
+    border: 2px solid var(--branco);
+    border-radius: 25px;
+    align-self: center;
+    margin-top: 25px;
 
+}
 
-
-/* smartphone  portrait */
+/* smartphone portrait */
 /* Cabecalho */
-header{
+header {
     height: 100px;
-    background-color: red;
-    
+    background-color: #a6ff00;
 }
+
 #logo img {
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: 10px 0px 0px 0px;
+    width: 90px;
+    height: 85px;
+    margin: 10px 0px 0px 0px;
+}
+
+#check {
+    display: none;
+}
+
+/* Efeito de deslizar o menu */
+/* se check estiver "ticado", criar um estilo para ul */
+#check:checked~ul {
+    right: 0;
+}
+
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: rgba(0,0,0,0.5); /* 0.5 = 50% transparencia (0 a 1 (100%) */
+}
+
+nav ul {
+    height: 100vh;  /* 100vh = 100% altura da tela*/
+    background-color: var(--amarelo);
+    list-style: none; /* Revover bullets */
+    width: 55%;
+    position: fixed;
+    top: 100px;
+    right: -55%;
+    transition: all 0.5s;
+
+}
+
+nav ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--preto);
+    text-align: right;
+
+}
+
+nav ul li a {
+    color: var(--preto);
+    text-decoration: none; /* remover o sublinhado */
+
+}
+
+/* Banner */
+main {
+    height: 60vh; /*ajuste largura do Banner*/
+    background: url(img/ferrari-1211257_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1, h2 {
+    color: var(--branco);
+    text-shadow: #000 0.05em 0.05em 0.05em; /* efeito de sombra */
+
+
+}
+main h1 {
+    font-size: 3em;
+}
+
+main h2 {
+    font-size: 1.6em;
+    margin-top: 30px;
 }
 
 /*/
 
+/* Layout */
+body {
+    font-family: "Arima", serif;
+    font-size: 1em; /* 1em = 100% (tamanho padrão) */
+}
 
+.container{
+    margin: 0 auto; /* centralizar o bloco */
+}
 
-
-/* smartphone  landscape */
-@media (min-width: 576px) {
-    /* Cabecalho */
-    #logo img {
-        width: 10px 0px 0px 0px;
-    }
-    .container {
-        width: 540px;
-        background-color: red
-    }
+/* Smartphone Portrait */
+/* Cabeçalho */
+header {
+    height: 100px;
+    background-color: rgb(125, 226, 43);
+}
+#logo img {
+    width:80px;
+    height: 80px;
+    margin: 10px 0px 0px 0px;
    
 }
 
+/* Variaveis */
+:root {
+    --vermelho: #da1212;
+    --branco: #FFF;
+    --preto: #000;
+    --amarelo: #ff0040;
 
+}
 
-
+/* CSS reset (compatibilizar com todos navegadores(*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 /*/
 
+/* Smartphone Landscape */
+@media (min-width: 576px) {
+    /* Cabeçalho */
+    #logo img {
+        margin: 10px 0px 0px 0px; 
+    }
+   .container{
+        max-width: 540px;
+        background-color: rgb(226, 43, 43);
+   }
+}
 
+/*/
 
-/* tablet portrait */
+/* Tablet Portrait */
 @media (min-width: 768px) {
-    /* Cabecalho */
+    /* cabeçalho */
     .container {
         max-width: 720px;
-        background-color: rgb(255, 0, 0);
+        background-color: rgb(226, 43, 43);
     }
     header {
         height: 110px;
@@ -77,71 +192,92 @@ header{
         width: 100px;
         height: 100px;
     }
-   
-}
 
-/*/
-
-
-
-
-/* tablet  landscape */
-@media (min-width: 992px) {
-  /* .container */
-  .container {
-    max-width: 960px;
-    background-color: red;
-  }
-
-}
-
-
-
-/*/
-
-
-/* PCs / Notebooks */@media (min-width: 1200px) {
-    /* cabecalho */
-    .container {
-        max-width: 1140px;
-        background-color: #ff0000;
+    nav ul {
+        top: 110px;
+        width: 50%;
+        right: -50%;
     }
-    header {
-        height: 150px;
+}
+
+/*/
+
+/* Tablet Landscape */
+@media (min-width: 992px) {
+    /* cabeçalho */
+    .container{
+        max-width: 960px;
+        background-color: rgb(226, 43, 43)
     }
     #logo img {
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 100px;
     }
-
-}
    
-
+}
 
 /*/
 
-/* Telas fullHD / 4k /SmartTV */@media (min-width: 1400px) {
-    .container {
-        max-width: 1360px;
-        background-color: rgb(255, 9, 9);
+/* PCs / Notebooks */
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1240px;
+        background-color: rgb(86, 226, 43);
+         /* cabeçalho */
     }
-    header {
+    header{
+        height: 150px;
+    }
+    
+    #logo img {
+        width: 140px;
+        height: 140px;
+    }
+    /*transformação do menu*/
+    label {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        height: auto;
+        position: static;;
+        
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+
+    }
+
+    nav ul li {
+        color: var(--branco);
+    }
+
+    nav ul li a:hover {
+        color: var(--vermelho);
+    }
+   
+   
+}
+
+/*/
+
+/* Telas FullHD / 4k / SmartTV */
+@media (min-width: 1400px) {
+    /* cabeçalho */
+    .container{
+        max-width: 1360;
+        background-color: red;
+    }
+    header{
         height: 200px;
     }
     #logo img {
         width: 176px;
         height: 176px;
     }
-
-}
     
-
-
-
-
-
-
-
-
-
+}
 
