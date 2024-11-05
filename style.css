@@ -47,7 +47,7 @@ header {
 
 #logo img {
     width: 90px;
-    height: 85px;
+    height: 100px;
     margin: 10px 0px 0px 0px;
 }
 
@@ -71,7 +71,7 @@ label {
 
 nav ul {
     height: 100vh;  /* 100vh = 100% altura da tela*/
-    background-color: var(--amarelo);
+    background-color:  rgba(214, 167, 167, 0.8);
     list-style: none; /* Revover bullets */
     width: 55%;
     position: fixed;
@@ -198,6 +198,18 @@ header {
         width: 50%;
         right: -50%;
     }
+
+    /* banner */
+
+    main h1 {
+        font-size: 6em;
+    }
+
+    main h2 {
+        font-size: 3.5em;
+        margin-top: 30px;
+    }
+    
 }
 
 /*/
