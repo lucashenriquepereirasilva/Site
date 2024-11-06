@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* Importação de font (google fontes) */
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prociono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* CSS Reset (compatibilizar com todos navegadores)*/
 * {
@@ -28,9 +28,9 @@ body {
     color: var(--branco);
     font-size: 1.3em;
     font-weight: 700;
-    background-color: #ff0000;
-    width: 160px;
-    padding: 11px 0px;
+    background-color: rgb(167, 0, 0);
+    width: 100px;
+    padding: 5px 5px;
     border: 2px solid var(--branco);
     border-radius: 25px;
     align-self: center;
@@ -66,12 +66,12 @@ label {
     position: fixed;
     top: 15px;
     right: 15px;
-    color: rgba(0,0,0,0.5); /* 0.5 = 50% transparencia (0 a 1 (100%) */
+    color: rgb(255, 255, 255); /* 0.5 = 50% transparencia (0 a 1 (100%) */
 }
 
 nav ul {
     height: 100vh;  /* 100vh = 100% altura da tela*/
-    background-color:  rgba(214, 167, 167, 0.8);
+    background-color:  rgba(197, 0, 0, 0.8);
     list-style: none; /* Revover bullets */
     width: 55%;
     position: fixed;
@@ -89,15 +89,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--preto);
+    color: rgb(255, 255, 255);
     text-decoration: none; /* remover o sublinhado */
+    font-weight: bold;
 
 }
 
 /* Banner */
 main {
     height: 60vh; /*ajuste largura do Banner*/
-    background: url(img/ferrari-1211257_1280.jpg);
+    background: url(img/banner2.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -137,12 +138,12 @@ body {
 /* Cabeçalho */
 header {
     height: 100px;
-    background-color: rgb(125, 226, 43);
+    background-color: rgb(167, 0, 0);
 }
 #logo img {
-    width:80px;
-    height: 80px;
-    margin: 10px 0px 0px 0px;
+    width:60px;
+    height: 60px;
+    margin: 10px 0px 0px 10px;
    
 }
 
@@ -151,7 +152,7 @@ header {
     --vermelho: #da1212;
     --branco: #FFF;
     --preto: #000;
-    --amarelo: #ff0040;
+    --amarelo: #fffb00;
 
 }
 
@@ -234,7 +235,7 @@ header {
 @media (min-width: 1200px) {
     .container{
         max-width: 1240px;
-        background-color: rgb(86, 226, 43);
+        background-color: rgb(167, 0, 0)
          /* cabeçalho */
     }
     header{
@@ -281,7 +282,7 @@ header {
     /* cabeçalho */
     .container{
         max-width: 1360;
-        background-color: red;
+        background-color: rgb(187, 1, 1)
     }
     header{
         height: 200px;
