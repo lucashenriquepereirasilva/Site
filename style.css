@@ -51,6 +51,11 @@ body {
     margin-top: 30px;
 }
 
+.topicos img{
+    width: 50px;
+    height: 50px;
+}
+
 /* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
@@ -142,7 +147,7 @@ main h2 {
 /****** Destaque ******/
 
 #destaque {
-    background: url(img/ferrari-627583_640.jpg);
+    background: url(img/amarela.png);
     background-size: cover;
     background-position: center;
     /* espaçamento para não enconstar na borda do dispositivo */
