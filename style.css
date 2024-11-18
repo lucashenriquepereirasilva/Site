@@ -11,7 +11,7 @@
     --branco: #fff;
     --amarelo: #e5b567;
     --vermelho: rgb(212, 8, 18);
-    
+
 }
 
 /* CSS Reset (compatibilizar com todos navegadores) */
@@ -51,7 +51,7 @@ body {
     margin-top: 30px;
 }
 
-.topicos img{
+.topicos img {
     width: 50px;
     height: 50px;
 }
@@ -67,8 +67,8 @@ header {
 }
 
 #logo img {
-    width: 128px;
-    height: 128px;
+    width: 60px;
+    height: 65px;
 }
 
 #check {
@@ -144,49 +144,52 @@ main h2 {
     margin-top: 25px;
     font-weight: 800;
 }
+
 /****** Destaque ******/
 
 #destaque {
-    background: url(img/amarela.png);
+    background: url(img/amarela2.png);
     background-size: cover;
     background-position: center;
     /* espaçamento para não enconstar na borda do dispositivo */
     padding: 50px 15px;
 }
+
 /* atenção!!! Organizando o container após o Destaque,o estilo é aplicado apenas ao container da seção de destaque */
-#destaque .container{
-flex-direction: column;
-align-items: center;
+#destaque .container {
+    flex-direction: column;
+    align-items: center;
 }
 
 /* para esconder a imagem usamos display: nome no container da imagem | para exibir novamente em telas maiores, usamos "display: block" */
 
 
-    
-
-
-#imagemDestaque img{
-    width: 200px;
-    height: 200px;
+#imagemDestaque img {
+    width: 50px;
+    height: 100px;
     /* arrendondar uma imagem quadrada */
-    border-radius: 50%;
+
 }
 
+#img-proble {
+    width: 300px;
+  
+    justify-content: space-between;
 
+}
 
-
-#TextoDestaque{
+#TextoDestaque {
     color: var(--branco);
 
 }
 
-#textodestaque h2{
+#textodestaque h2 {
     margin-bottom: 20px;
 }
 
 /* atenção!!! detalhe do sinal ">" ref. ao elemento imediato */
-#textoDestaque p{
-    color: var(--branco);
+#textoDestaque p {
+    margin-bottom: 15px;
 }
 
 .topicos {
@@ -199,9 +202,35 @@ align-items: center;
     margin-right: 10px;
 }
 
-.topicos p{
+.topicos p {
     font-weight: 600;
 }
+
+/******sobre******/
+/*o estilo abaixo será aplicado apenas ao container qeu está subordinado a section "Sobre"*/
+#sobre .container {
+    flex-direction: column;
+}
+
+#sobre {
+    padding: 50px 15px;
+}
+
+#sobre h2,
+p {
+    color: var(--branco);
+}
+
+#sobre h2 {
+    margin-bottom: 20px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    margin-top: 20px;
+}
+
 
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -231,11 +260,29 @@ align-items: center;
     }
 
     /****** Destaque ****** */
-    #destaque .container{
+    #destaque .container {
         flex-direction: row;
     }
 
-    
+    #imagemDestaque {
+        margin-right: 50px;
+    }
+
+    #imagemDestaque img {
+        width: 256px;
+        height: 256px;
+
+    }
+
+    /******sobre******/
+    #video iframe {
+        width: 560px;
+        height: 315px;
+
+    }
+
+
+
 }
 
 /* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
@@ -257,11 +304,12 @@ align-items: center;
 
     main h1 {
         font-size: 4em;
-        
-        
+
+
     }
+
     /******** Destaque *************/
-    #imagemmDestaque img{
+    #imagemmDestaque img {
         width: 440px;
         height: 440px;
     }
@@ -344,11 +392,23 @@ align-items: center;
     main h2 {
         font-size: 3em;
     }
-     /******** Destaque *************/
-     #Destaque {
+
+    /******** Destaque *************/
+    #Destaque {
         /* O codigo abaixo fixa o banner (efeito parallax) */
         background-attachment: fixed;
-     }
+    }
+
+    /******sobre******/
+
+    #sobre .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #video iframe {
+        margin: 0;
+    }
 }
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
