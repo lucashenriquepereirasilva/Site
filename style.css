@@ -11,6 +11,7 @@
     --branco: #fff;
     --amarelo: #e5b567;
     --vermelho: rgb(212, 8, 18);
+    --cinza: rgb(158, 151, 152);
 
 }
 
@@ -153,12 +154,14 @@ main h2 {
     background-position: center;
     /* espaçamento para não enconstar na borda do dispositivo */
     padding: 50px 15px;
+  
 }
 
 /* atenção!!! Organizando o container após o Destaque,o estilo é aplicado apenas ao container da seção de destaque */
 #destaque .container {
     flex-direction: column;
     align-items: center;
+    
 }
 
 /* para esconder a imagem usamos display: nome no container da imagem | para exibir novamente em telas maiores, usamos "display: block" */
@@ -231,6 +234,10 @@ p {
     margin-top: 20px;
 }
 
+#sobre {
+    background-color: var(--cinza);
+
+}
 
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -355,6 +362,7 @@ p {
     #logo img {
         width: 100px;
         height: 100px;
+        
     }
 
     /* Transformação do menu */
@@ -409,6 +417,8 @@ p {
     #video iframe {
         margin: 0;
     }
+
+   
 }
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
