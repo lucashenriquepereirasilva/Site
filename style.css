@@ -28,6 +28,7 @@ body {
     font-size: 1em;
     /* 1em = 100% (tamanho padrão) */
     background-color: var(--background);
+    
 }
 
 .container {
@@ -211,6 +212,13 @@ main h2 {
 
 /******sobre******/
 /*o estilo abaixo será aplicado apenas ao container qeu está subordinado a section "Sobre"*/
+#sobre {
+    background-color: rgb(43, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #sobre .container {
     flex-direction: column;
 }
@@ -232,11 +240,6 @@ p {
     width: 340px;
     height: 191px;
     margin-top: 20px;
-}
-
-#sobre {
-    background-color: var(--cinza);
-
 }
 
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
@@ -311,8 +314,6 @@ p {
 
     main h1 {
         font-size: 4em;
-
-
     }
 
     /******** Destaque *************/
@@ -321,7 +322,15 @@ p {
         height: 440px;
     }
 
+    #destaque p {
+        max-width: 350px;
+    }
 
+    #ImagemDestaque img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
 }
 
 /* Fim | Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -339,6 +348,16 @@ p {
     /****** Banner ******/
     main {
         height: 70vh;
+    }
+
+    #destaque p {
+        max-width: 600px;
+    }
+
+    #ImagemDestaque img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
     }
 }
 
@@ -405,8 +424,17 @@ p {
     #destaque {
         /* O codigo abaixo fixa o banner (efeito parallax) */
         background-attachment: fixed;
+    }
+
+    #ImagemDestaque img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    #destaque .container{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     /******sobre******/
@@ -420,7 +448,11 @@ p {
         margin: 0;
     }
 
-   
+    #sobre {
+        justify-content: space-between;
+    }
+
+    
 }
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
