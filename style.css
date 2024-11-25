@@ -154,7 +154,7 @@ main h2 {
     background-position: center;
     /* espaçamento para não enconstar na borda do dispositivo */
     padding: 50px 15px;
-  
+    
 }
 
 /* atenção!!! Organizando o container após o Destaque,o estilo é aplicado apenas ao container da seção de destaque */
@@ -402,9 +402,11 @@ p {
     }
 
     /******** Destaque *************/
-    #Destaque {
+    #destaque {
         /* O codigo abaixo fixa o banner (efeito parallax) */
         background-attachment: fixed;
+        display: flex;
+        justify-content: space-between;
     }
 
     /******sobre******/
