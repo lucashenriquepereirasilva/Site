@@ -4,3 +4,6 @@
 Estudo HTML5 CSS3
 ## Autor
 Lucas henrique Pereira Silva
+
+##site
+![](img/qrcode.png)
