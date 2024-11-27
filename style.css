@@ -89,7 +89,7 @@ label {
     top: 5px;
     right: 15px;
     /* transparência (0 a 1 (100%) */
-    color: rgba(206, 9, 9, 0.9);
+    color: white;
 }
 
 nav ul {
@@ -237,7 +237,7 @@ p {
 }
 
 #video iframe {
-    width: 340px;
+    width: 300px;
     height: 191px;
     margin-top: 20px;
 }
@@ -288,6 +288,7 @@ p {
     #video iframe {
         width: 560px;
         height: 315px;
+
 
     }
 
@@ -434,26 +435,57 @@ p {
 
     #destaque .container{
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
     }
 
     /******sobre******/
 
-    #sobre .container {
-        flex-direction: row;
+    #sobre.container{
+        flex-direction: row-reverse;
         align-items: center;
+    }
+
+
+ 
+        
+    
+ 
+
+
     }
 
     #video iframe {
         margin: 0;
     }
 
+    #sobre .container {
+        flex-direction: column;
+    }
+    
     #sobre {
-        justify-content: space-between;
+        padding: 50px 15px;
+    }
+    
+    #sobre h2, p {
+        color: var(--branco);
+    }
+    
+    #sobre h2 {
+        margin-bottom: 20px;
+    }
+    
+    #video iframe {
+        width: 340px;
+        height: 191px;
+        margin-top: 20px;
     }
 
+    #sobre.container{
+        flex-direction: row;
+        align-items: center;
+    }
     
-}
+
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -479,6 +511,15 @@ p {
     main h2 {
         font-size: 4em;
     }
+
+    #sobre .container{
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+    }
+
+
+
 }
 
 /* Fim | Telas Grandes (FullHD / 4K / SmartTV) >>>>>*/
