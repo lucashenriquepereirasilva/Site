@@ -27,7 +27,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
     /* 1em = 100% (tamanho padrão) */
-    background-color: var(--background);
+    background-color: var(--cinza);
     
 }
 
@@ -46,7 +46,7 @@ body {
     font-weight: 700;
     background-color: var(--vermelho);
     width: 160px;
-    padding: 10px 0px;
+    padding: 10px 20px;
     border: 2px solid var(--branco);
     border-radius: 25px;
     align-self: center;
@@ -242,6 +242,39 @@ p {
     margin-top: 20px;
 }
 
+/**** faixa de Destaque ******/
+
+#faixaDestaque{
+    background: url();
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+
+}
+
+#faixadestaque .container{
+    flex-direction: column;
+}
+
+#imagemdestaque img{
+    width: 250px;
+    height: 256px;
+}
+
+#textofaixa h2{
+    color: var(--amarelo);
+
+}
+
+#textofaixa p{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
 
@@ -294,9 +327,10 @@ p {
 
     
     #ImagemDestaque img{
-        width: 300px;
+        width: 400px;
         height: 300px;
         border-radius: 100%;
+
     }
 }
 
@@ -326,7 +360,7 @@ p {
     }
 
     /******** Destaque *************/
-    #imagemmDestaque img {
+    #imagemDestaque img {
         width: 440px;
         height: 440px;
     }
@@ -413,7 +447,7 @@ p {
     }
 
     nav ul li a {
-        color: var(--amarelo);
+        color: var(--p);
     }
 
     nav ul li a:hover {
@@ -492,7 +526,22 @@ p {
         flex-direction: row;
         align-items: center;
     }
+
+    /* faixa destaque */
+
+    #faixadestaque{
+        background-attachment: fixed;
+    }
     
+
+    #faixadestaque .container{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    #imagemfaixa img{
+        width: 312px;
+        height: 320px;
+    }
 
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
