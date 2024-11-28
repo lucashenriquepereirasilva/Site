@@ -58,6 +58,35 @@ body {
     height: 50px;
 }
 
+/**** faixa de Destaque ******/
+
+#faixaDestaque {
+    background: url(img/amarela2.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+}
+
+#faixaDestaque .container {
+    flex-direction: column;
+}
+
+#imagemfaixa img {
+    width: 200px;
+    height: 200px;
+}
+
+#textoFaixa h2 {
+    color: var(--branco);
+    margin-bottom: 15px;
+}
+
+#textoFaixa p {
+    margin-bottom: 50px;
+}
+   
+
+
 /* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
@@ -242,34 +271,6 @@ p {
     margin-top: 20px;
 }
 
-/**** faixa de Destaque ******/
-
-#faixaDestaque{
-    background: url();
-    background-size: cover;
-    background-position: center;
-    padding: 50px 15px;
-
-}
-
-#faixadestaque .container{
-    flex-direction: column;
-}
-
-#imagemdestaque img{
-    width: 250px;
-    height: 256px;
-}
-
-#textofaixa h2{
-    color: var(--amarelo);
-
-}
-
-#textofaixa p{
-    margin-bottom: 50px;
-}
-
 
 
 
@@ -447,7 +448,7 @@ p {
     }
 
     nav ul li a {
-        color: var(--p);
+        color: var(--branco);
     }
 
     nav ul li a:hover {
@@ -527,21 +528,23 @@ p {
         align-items: center;
     }
 
-    /* faixa destaque */
-
-    #faixadestaque{
+    /***** Faixa de destaque ******/
+    #faixaDestaque {
         background-attachment: fixed;
     }
-    
 
-    #faixadestaque .container{
+    #faixaDestaque .container {
         flex-direction: row-reverse;
         align-items: center;
+        
     }
-    #imagemfaixa img{
-        width: 312px;
-        height: 320px;
+
+    #imagemFaixa img {
+        width: 300px;
+        height: 400px;
     }
+   
+
 
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -567,12 +570,6 @@ p {
 
     main h2 {
         font-size: 4em;
-    }
-
-    #sobre .container{
-        flex-direction: row;
-        align-items: center;
-        display: flex;
     }
 
 
