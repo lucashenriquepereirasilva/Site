@@ -12,6 +12,7 @@
     --amarelo: #e5b567;
     --vermelho: rgb(212, 8, 18);
     --cinza: rgb(158, 151, 152);
+  
 
 }
 
@@ -46,17 +47,50 @@ body {
     font-weight: 700;
     background-color: var(--vermelho);
     width: 160px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: 2px solid var(--branco);
     border-radius: 25px;
     align-self: center;
     margin-top: 30px;
 }
 
+
+
+
 .topicos img {
     width: 50px;
     height: 50px;
 }
+
+.card{
+    width: 370px;
+    height: 520px;
+    margin-top: 20px;
+    background-color: var(--background);
+    background-color: var(--vermelho);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card img{
+    border-radius: 25px 25px 0px 0px;
+
+}
+
+.card h3{
+    margin-top: 10px
+}
+
+.card p{
+    text-align: left;
+    padding: 10px  10px 50px 30px;
+    
+}.card a{
+    padding: 10px 30px;
+    border: 0;
+    background-color: #a09e9e;
+}
+
 
 /**** faixa de Destaque ******/
 
@@ -77,7 +111,7 @@ body {
 }
 
 #textoFaixa h2 {
-    color: var(--branco);
+    color: var(--cinza);
     margin-bottom: 15px;
 }
 
@@ -272,7 +306,38 @@ p {
 }
 
 
+/* seção de conteúdos (cards) */
+#conteudo{
+    padding: 50px 0px;
+}
 
+#conteudo .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo h2{
+    color: #333232;
+    margin-bottom: 25px;
+}
+
+
+#todos {
+    color: var(--amarelo);
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 700;
+
+}
+
+.containercards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
 
 
 
@@ -284,7 +349,7 @@ p {
 
     /****** Layout ******/
     .container {
-        max-width: 540px;
+        max-width: 640px;
         /* background-color: #ffff00;*/
     }
 
@@ -375,17 +440,21 @@ p {
         height: 300px;
         border-radius: 50%;
     }
+
+    /* seção de conteudo (cards) */
+.card{
+    margin:  0px 10px;
+}
 }
 
 /* Fim | Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
 
     /****** Layout ******/
     .container {
-        max-width: 960px;
+        max-width: 968px;
         /* background-color: #ffa500; */
     }
 
@@ -425,6 +494,7 @@ p {
     #logo img {
         width: 100px;
         height: 100px;
+        
         
     }
 
@@ -488,11 +558,8 @@ p {
         align-items: center;
     }
 
-
- 
-        
     
- 
+
 
 
     }
@@ -542,8 +609,8 @@ p {
     #imagemFaixa img {
         width: 300px;
         height: 400px;
+        
     }
-   
 
 
 
@@ -571,8 +638,6 @@ p {
     main h2 {
         font-size: 4em;
     }
-
-
 
 }
 
