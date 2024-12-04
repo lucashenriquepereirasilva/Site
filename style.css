@@ -350,6 +350,10 @@ p {
 
 
 
+
+
+
+
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
 
@@ -410,7 +414,74 @@ p {
 }
 
 
+/* Rodapé */
 
+address {
+    padding: 20px 10px 20px 10px;
+    background: url(img/7.webp);
+    background-size: cover;
+    background-position: center;
+    color: black;
+  
+  }
+  
+  address a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  address img {
+    padding-top: 5px;
+  }
+  
+  #iconeLocal {
+    display: none;
+    color: black;
+  }
+  
+  #dados {
+    margin: 0px 0px 2px 0px;
+    
+  }
+  
+  #googleMaps {
+    
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:0;
+      
+  }
+  
+  .map-responsive iframe{
+  
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+  
+  }
+  
+  
+  footer {
+    padding: 20px 0px;
+    background-color: #343538;
+    font-size: 0.875em;
+    color: #fff;
+    text-align: center;
+  
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #social {
+    margin-bottom: 0px;
+    
+  }
 
 
 /* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
@@ -621,27 +692,8 @@ p {
         
     }
 
+    
 
-    /* Rodapé */
-  .Flex6 {
-    flex-direction: row-reverse;
-  }
-
-  address {
-    padding-top: 50px;
-  }
-
-  #iconeLocal {
-    display: inline;
-  }
-
-  #iconeMapa {
-    display: none;
-  }
-
-  #googleMaps {
-    display: inline;
-  }
 
 
 
@@ -674,6 +726,31 @@ p {
 
 
 }
+
+
+
+/* Rodapé */
+.Flex6 {
+    flex-direction: row-reverse;
+  }
+
+  #address {
+    padding-top: 50px;
+  }
+
+  #iconeLocal {
+    display: inline;
+  }
+
+  #iconeMapa {
+    display: none;
+  }
+
+  #googleMaps {
+    display: inline;
+  }
+
+
 
 
 
