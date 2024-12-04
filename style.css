@@ -24,6 +24,10 @@
 }
 
 /* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+html{
+    /* rolagem suave do conteudo */
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
@@ -91,6 +95,11 @@ body {
     background-color: #a09e9e;
 }
 
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
 
 /**** faixa de Destaque ******/
 
@@ -613,6 +622,29 @@ p {
     }
 
 
+    /* Rodapé */
+  .Flex6 {
+    flex-direction: row-reverse;
+  }
+
+  address {
+    padding-top: 50px;
+  }
+
+  #iconeLocal {
+    display: inline;
+  }
+
+  #iconeMapa {
+    display: none;
+  }
+
+  #googleMaps {
+    display: inline;
+  }
+
+
+
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -639,6 +671,12 @@ p {
         font-size: 4em;
     }
 
+
+
 }
 
+
+
+
 /* Fim | Telas Grandes (FullHD / 4K / SmartTV) >>>>>*/
+

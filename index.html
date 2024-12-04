@@ -13,7 +13,7 @@
 <body>
     <!-- cabeçalho-->
     <header>
-        <div class="container">
+        <div class="container" id="inicio">
             <!--logotipo-->
             <div id="logo">
 
@@ -25,8 +25,8 @@
                 <label for="check">&#x268c;</label>
                 <ul>
                     <li><a href="#">Inicío</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contéudo</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#conteúdo">Contéudo</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
@@ -116,7 +116,7 @@
                 <div class="card">
                     <img src="img/ferrari458.jpg" alt="">
                     <h3>Ferrari 458</h3>
-                    <p></p>
+                    <p>A Ferrari 458 Italia é um modelo esportivo de motor central produzido pela Ferrari. Suas primeiras fotos foram divulgadas pela Ferrari em 28 de julho de 2009 e foi apresentado ao público no Salão do Automóvel de Frankfurt em setembro do mesmo ano.</p>
                     <br>
                     <a href="#" class="botao">Saiba +</a>
 
@@ -124,15 +124,15 @@
                 <div class="card">
                     <img src="icones/cartao2.jpg" alt="">
                     <h3>Ferrari 12</h3>
-                    <p></p>
+                    <p>A nova Ferrari 12 cilindros é a mais recente novidade da casa de Maranello. É um esportivo de dois lugares com a clássica carroceria berlinetta e uma peculiaridade: é um tributo, ou melhor, um investimento, iniciado há quatro anos, com um protagonista claro.</p>
                     <br>
                     <a href="#" class="botao">Saiba +</a>
 
                 </div>
                 <div class="card">
                     <img src="icones/cartaof8.jpg" alt="">
-                    <h3>Ferrari f8</h3>
-                    <p></p>
+                    <h3>Ferrari f8 Tributo</h3>
+                    <p>A Ferrari F8 Tributo é um dos modelos mais emblemáticos da marca italiana, representando a evolução da engenharia automotiva e o compromisso da Ferrari com a performance e a inovação.</p>
                     <br>
                     <a href="#" class="botao">Saiba +</a>
                 </div>
@@ -141,6 +141,66 @@
         </div>
     </section>
 
+      <!-- Rodapé -->
+      <address>
+        <div class="Container Flex6">
+            <div id="contato">
+            </div>
+            <div>
+                <a href="https://goo.gl/maps/mLpzArWKPpWZDgaD7"><img src="img/mapas-e-bandeiras.png" alt="Mapa" id="iconeMapa"></a>
+                <img src="img/icons8-google-maps-64.png" alt="local" id="iconeLocal">
+                <p>av.brasil , 1234</p>
+                <p>Jardim America</p>
+                <p>São Paulo - SP</p>
+                <p>Endereco, 01431-001</p>
+
+
+                <a href="mailto:seuemail@email.com?subject=HTML5CSS3">
+                    <img src="imagens/email.png" alt="email" title="Enviar E-mail">
+                    <p>jenriquelucas08@gmail.com</p>
+                </a>
+
+                
+            </div>
+            <div id="googleMaps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14628.09612282995!2d-46.67400899999999!3d-23.567580399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce577c3f5c3a45%3A0x894824606ad84e0!2sFerrari%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1733342102367!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                   
+    
+            </div>
+            </div>
+            
+    </address>
+    <footer>
+        <div class="Container Flex5">
+            <div>
+                <p>&#169;<span id="copyrightYear"></span> - <a href="https://fernandass2.github.io/site/">lucas henrique</a></p>
+            </div>
+            <div id="social">
+             
+                <a href="https://br.linkedin.com/in/fernanda-batista-b2b907120?trk=people-guest_people_search-card"><img src="img/icons8-linkedin-48.png"
+                 alt="linkedin"></a>
+                <a href="https://github.com/Fernandass2"> <img src="img/icons8-github-50.png" alt="github"></a>
+                <a href="https://www.facebook.com/Pretttaa/"><img src="img/icons8-facebook-48.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/lucashps05/?next=%2F"><img src="imagens/instagram .png"
+                        alt="instagram"></a>
+               
+            </div>
+
+            <p id="dados"> Volte sempre! 😊</p>
+        </div>
+    </footer>
+    <a href="#inicio" id="topo"><img src="imagens/topo.png" alt="topo do site"></a>
+
+    
+    <script>
+        // Atualizar automaticamente o ano (footer - copyright)  
+        let ano = document.getElementById("copyrightYear")
+        let anoAtual = new Date().getFullYear()
+        ano.textContent = anoAtual
+    </script>
+
+   
 
 </body>
 
