@@ -1,5 +1,5 @@
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Flucashenriquepereirasilva.github.io%2FSite%2F)
-![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=http%3A%2F%2F127.0.0.1%3A5501%2F)
+
 
 
 # HTML5 E CSS3
