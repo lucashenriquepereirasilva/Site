@@ -72,17 +72,20 @@ body {
     margin-top: 20px;
     background-color: var(--background);
     background-color: var(--vermelho);
-    border-radius: 20px;
+    border-radius: 30px;
     text-align: center;
 }
 
 .card img{
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 20px 25px 0px 0px;
+    height: 170px;
 
 }
 
 .card h3{
-    margin-top: 10px
+    margin-top: 40px;
+    
+    
 }
 
 .card p{
@@ -92,7 +95,7 @@ body {
 }.card a{
     padding: 10px 30px;
     border: 0;
-    background-color: #a09e9e;
+    background-color: #3f3e3e;
 }
 
 #topo{
@@ -102,32 +105,6 @@ body {
 }
 
 /**** faixa de Destaque ******/
-
-#faixaDestaque {
-    background: url(img/amarela2.png);
-    background-size: cover;
-    background-position: center;
-    padding: 50px 15px;
-}
-
-#faixaDestaque .container {
-    flex-direction: column;
-}
-
-#imagemfaixa img {
-    width: 200px;
-    height: 200px;
-}
-
-#textoFaixa h2 {
-    color: var(--cinza);
-    margin-bottom: 15px;
-}
-
-#textoFaixa p {
-    margin-bottom: 50px;
-}
-   
 
 
 /* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -285,7 +262,7 @@ main h2 {
 /******sobre******/
 /*o estilo abaixo será aplicado apenas ao container qeu está subordinado a section "Sobre"*/
 #sobre {
-    background-color: rgb(43, 41, 41);
+    background-color: rgb(83, 80, 80);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,6 +292,38 @@ p {
 }
 
 
+#faixaDestaque {
+    background: url(img/amarela2.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+    text-align: center;
+}
+
+#faixaDestaque .container {
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+#imagemfaixa img {
+    width: 200px;
+    height: 200px;
+}
+
+#textoFaixa h2 {
+   font-size: 1.5em;
+    margin-bottom: 5px;
+ color: var(--branco);
+}
+
+#textoFaixa p {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+   
+
+
+
 /* seção de conteúdos (cards) */
 #conteudo{
     padding: 50px 0px;
@@ -326,7 +335,7 @@ p {
 }
 
 #conteudo h2{
-    color: #333232;
+    color: #1d1d1d;
     margin-bottom: 25px;
 }
 
@@ -346,6 +355,29 @@ p {
     justify-content: center;
 
 
+}
+
+/*rodape*/
+footer {
+    background-color: #19191a;
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 0.87em;
+}
+#rodape .container{
+    flex-direction: column-reverse;
+}
+#social {
+    margin-bottom: 20px;
+}
+#rodape .container a {
+    text-decoration: none;
+    color: #fff;
+}
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
 
@@ -418,20 +450,20 @@ p {
 
 address {
     padding: 20px 10px 20px 10px;
-    background: url(img/7.webp);
+    background: url();
     background-size: cover;
     background-position: center;
-    color: black;
+    color: rgb(22, 21, 21);
   
   }
   
   address a {
     text-decoration: none;
-    color: black;
+    color: rgb(16, 16, 16);
   }
   
   address img {
-    padding-top: 5px;
+    padding-top: 10px;
   }
   
   #iconeLocal {
@@ -464,26 +496,14 @@ address {
   }
   
   
-  footer {
-    padding: 20px 0px;
-    background-color: #343538;
-    font-size: 0.875em;
-    color: #fff;
-    text-align: center;
-  
-  }
-  
-  footer a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  #social {
+  #rodape .container{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#social {
     margin-bottom: 0px;
-    
-  }
-
-
+}
 /* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
 
 
@@ -676,22 +696,32 @@ address {
     }
 
     /***** Faixa de destaque ******/
-    #faixaDestaque {
+
+    #faixadestaque{
         background-attachment: fixed;
     }
 
-    #faixaDestaque .container {
+    #faixaDestaque .container{
         flex-direction: row-reverse;
-        align-items: center;
-        
     }
 
-    #imagemFaixa img {
-        width: 300px;
-        height: 400px;
-        
+    #imagemFaixa img{
+        width: 260px;
+        height: 260px;
     }
 
+    #textoFaixa h2 {
+        font-size: 3em;
+        margin-bottom: 30px;
+
+
+    }
+
+    #textoFaixa p{
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+  
     
 
 
@@ -748,6 +778,12 @@ address {
 
   #googleMaps {
     display: inline;
+  }
+
+  #social{
+    margin-left: 20px;
+    margin-right: 20px;
+    
   }
 
 
