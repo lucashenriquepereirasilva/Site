@@ -1,0 +1,792 @@
+@charset "UTF-8";
+
+/* Importação de fonts (google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+/* Variáveis */
+:root {
+    --background: #b40303;
+    --branco: #fff;
+    --amarelo: #e5b567;
+    --vermelho: rgb(212, 8, 18);
+    --cinza: rgb(158, 151, 152);
+  
+
+}
+
+/* CSS Reset (compatibilizar com todos navegadores) */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+html{
+    /* rolagem suave do conteudo */
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    /* 1em = 100% (tamanho padrão) */
+    background-color: var(--cinza);
+    
+}
+
+.container {
+    margin: 0 auto;
+    /* centralizar o bloco */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.botao {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: var(--vermelho);
+    width: 160px;
+    padding: 10px 10px;
+    border: 2px solid var(--branco);
+    border-radius: 25px;
+    align-self: center;
+    margin-top: 30px;
+}
+
+
+
+
+.topicos img {
+    width: 50px;
+    height: 50px;
+}
+
+.card{
+    width: 370px;
+    height: 520px;
+    margin-top: 20px;
+    background-color: var(--background);
+    background-color: var(--vermelho);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.card img{
+    border-radius: 20px 25px 0px 0px;
+
+}
+
+.card h3{
+    margin-top: 40px
+}
+
+.card p{
+    text-align: left;
+    padding: 10px  10px 50px 30px;
+    
+}.card a{
+    padding: 10px 30px;
+    border: 0;
+    background-color: #3f3e3e;
+}
+
+#topo{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+
+/**** faixa de Destaque ******/
+
+
+/* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/****** Cabeçalho ******/
+header {
+    height: 65px;
+    /* background-color: #00ffff;*/
+}
+
+#logo img {
+    width: 60px;
+    height: 65px;
+}
+
+#check {
+    display: none;
+}
+
+/* Efeito "deslizar o menu" */
+/* Se check estiver "ticado", crir um estilo para ul*/
+#check:checked~ul {
+    right: 0;
+}
+
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    /* transparência (0 a 1 (100%) */
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(15, 15, 15, 0.9);
+    height: 100vh;
+    position: fixed;
+    top: 65px;
+    right: -50%;
+    width: 50%;
+    transition: all 0.5s;
+}
+
+nav ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--cinza);
+    text-align: right;
+}
+
+nav ul li a {
+    color: var(--branco);
+    /* remover sublinhado */
+    text-decoration: none;
+}
+
+/****** Banner ******/
+main {
+    height: 60vh;
+    /* ajuste da altura do Banner */
+    background: url(img/banner2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1,
+h2 {
+    /* efeito de sombra nos textos */
+    text-shadow: #0f0f0f 0.05em 0.05em 0.05em;
+}
+
+main h1 {
+    color: var(--vermelho);
+    font-family: "Koulen", sans-serif;
+    font-size: 2.9em;
+}
+
+main h2 {
+    color: var(--branco);
+    font-size: 2.2em;
+    margin-top: 25px;
+    font-weight: 800;
+}
+
+/****** Destaque ******/
+
+#destaque {
+    background: url(img/amarela2.png);
+    background-size: cover;
+    background-position: center;
+    /* espaçamento para não enconstar na borda do dispositivo */
+    padding: 50px 15px;
+    
+}
+
+/* atenção!!! Organizando o container após o Destaque,o estilo é aplicado apenas ao container da seção de destaque */
+#destaque .container {
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* para esconder a imagem usamos display: nome no container da imagem | para exibir novamente em telas maiores, usamos "display: block" */
+
+
+#imagemDestaque img {
+    width: 50px;
+    height: 100px;
+    /* arrendondar uma imagem quadrada */
+
+}
+
+#img-proble {
+    width: 300px;
+  
+    justify-content: space-between;
+
+}
+
+#TextoDestaque {
+    color: var(--branco);
+
+}
+
+#textodestaque h2 {
+    margin-bottom: 20px;
+}
+
+/* atenção!!! detalhe do sinal ">" ref. ao elemento imediato */
+#textoDestaque p {
+    margin-bottom: 15px;
+}
+
+.topicos {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.topicos img {
+    margin-right: 10px;
+}
+
+.topicos p {
+    font-weight: 600;
+}
+
+/******sobre******/
+/*o estilo abaixo será aplicado apenas ao container qeu está subordinado a section "Sobre"*/
+#sobre {
+    background-color: rgb(83, 80, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre .container {
+    flex-direction: column;
+}
+
+#sobre {
+    padding: 50px 15px;
+}
+
+#sobre h2,
+p {
+    color: var(--branco);
+}
+
+#sobre h2 {
+    margin-bottom: 20px;
+}
+
+#video iframe {
+    width: 300px;
+    height: 191px;
+    margin-top: 20px;
+}
+
+
+#faixaDestaque {
+    background: url(img/amarela2.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+    text-align: center;
+}
+
+#faixaDestaque .container {
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+#imagemfaixa img {
+    width: 200px;
+    height: 200px;
+}
+
+#textoFaixa h2 {
+   font-size: 1.5em;
+    margin-bottom: 5px;
+ color: var(--branco);
+}
+
+#textoFaixa p {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+   
+
+
+
+/* seção de conteúdos (cards) */
+#conteudo{
+    padding: 50px 0px;
+}
+
+#conteudo .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo h2{
+    color: #1d1d1d;
+    margin-bottom: 25px;
+}
+
+
+#todos {
+    color: var(--amarelo);
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 700;
+
+}
+
+.containercards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+/*rodape*/
+footer {
+    background-color: #19191a;
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 0.87em;
+}
+#rodape .container{
+    flex-direction: column-reverse;
+}
+#social {
+    margin-bottom: 20px;
+}
+#rodape .container a {
+    text-decoration: none;
+    color: #fff;
+}
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+
+
+
+
+
+/* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 576px) {
+
+    /****** Layout ******/
+    .container {
+        max-width: 640px;
+        /* background-color: #ffff00;*/
+    }
+
+    /****** Cabeçalho ******/
+    nav ul {
+        right: -25%;
+        width: 25%;
+    }
+
+    /****** Banner ******/
+    main {
+        height: 100vh;
+    }
+
+    main h1 {
+        font-size: 3em;
+    }
+
+    /****** Destaque ****** */
+    #destaque .container {
+        flex-direction: row;
+    }
+
+    #imagemDestaque {
+        margin-right: 50px;
+    }
+
+    #imagemDestaque img {
+        width: 256px;
+        height: 256px;
+
+    }
+
+    /******sobre******/
+    #video iframe {
+        width: 560px;
+        height: 315px;
+
+
+    }
+
+    
+    #ImagemDestaque img{
+        width: 400px;
+        height: 300px;
+        border-radius: 100%;
+
+    }
+}
+
+
+/* Rodapé */
+
+address {
+    padding: 20px 10px 20px 10px;
+    background: url();
+    background-size: cover;
+    background-position: center;
+    color: rgb(22, 21, 21);
+  
+  }
+  
+  address a {
+    text-decoration: none;
+    color: rgb(16, 16, 16);
+  }
+  
+  address img {
+    padding-top: 10px;
+  }
+  
+  #iconeLocal {
+    display: none;
+    color: black;
+  }
+  
+  #dados {
+    margin: 0px 0px 2px 0px;
+    
+  }
+  
+  #googleMaps {
+    
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:0;
+      
+  }
+  
+  .map-responsive iframe{
+  
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+  
+  }
+  
+  
+  #rodape .container{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#social {
+    margin-bottom: 0px;
+}
+/* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 768px) {
+
+    /******* Layout ******/
+    .container {
+        max-width: 720px;
+        /* background-color: #00ff00; */
+    }
+
+    /****** Banner ******/
+    main {
+        height: 80vh;
+    }
+
+    main h1 {
+        font-size: 4em;
+    }
+
+    /******** Destaque *************/
+    #imagemDestaque img {
+        width: 440px;
+        height: 440px;
+    }
+
+    #destaque p {
+        max-width: 350px;
+    }
+
+    #ImagemDestaque img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    /* seção de conteudo (cards) */
+.card{
+    margin:  0px 10px;
+}
+}
+
+/* Fim | Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 992px) {
+
+    /****** Layout ******/
+    .container {
+        max-width: 968px;
+        /* background-color: #ffa500; */
+    }
+
+    /****** Banner ******/
+    main {
+        height: 70vh;
+    }
+
+    #destaque p {
+        max-width: 600px;
+    }
+
+    #ImagemDestaque img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+}
+
+/* Fim | Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 1200px) {
+
+    /****** Layout ******/
+    .container {
+        max-width: 1140px;
+        /* background-color: #ff009d; */
+    }
+
+    /****** Cabeçalho ******/
+    header {
+        height: 100px;
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+        
+        
+    }
+
+    /* Transformação do menu */
+    label {
+        display: none;
+    }
+
+    nav ul {
+        margin-top: 25px;
+        width: 100%;
+        height: auto;
+        position: static;
+        /* remover a cor do background */
+        background-color: transparent;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: var(--branco);
+    }
+
+    nav ul li a:hover {
+        color: var(--amarelo);
+    }
+
+    /****** Banner ******/
+    main h1 {
+        font-size: 6em;
+    }
+
+    main h2 {
+        font-size: 3em;
+    }
+
+    /******** Destaque *************/
+    #destaque {
+        /* O codigo abaixo fixa o banner (efeito parallax) */
+        background-attachment: fixed;
+    }
+
+    #ImagemDestaque img{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+
+    #destaque .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /******sobre******/
+
+    #sobre.container{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    
+
+
+
+    }
+
+    #video iframe {
+        margin: 0;
+    }
+
+    #sobre .container {
+        flex-direction: column;
+    }
+    
+    #sobre {
+        padding: 50px 15px;
+    }
+    
+    #sobre h2, p {
+        color: var(--branco);
+    }
+    
+    #sobre h2 {
+        margin-bottom: 20px;
+    }
+    
+    #video iframe {
+        width: 340px;
+        height: 191px;
+        margin-top: 20px;
+    }
+
+    #sobre.container{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /***** Faixa de destaque ******/
+
+    #faixadestaque{
+        background-attachment: fixed;
+    }
+
+    #faixaDestaque .container{
+        flex-direction: row-reverse;
+    }
+
+    #imagemFaixa img{
+        width: 260px;
+        height: 260px;
+    }
+
+    #textoFaixa h2 {
+        font-size: 3em;
+        margin-bottom: 30px;
+
+
+    }
+
+    #textoFaixa p{
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+  
+    
+
+
+
+
+
+/* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* Telas Grandes (FullHD / 4K / SmartTV) >>>>>>>>>>>*/
+@media (min-width: 1400px) {
+
+    /****** Layout ******/
+    .container {
+        max-width: 1360px;
+        /* background-color: #7d5b8c; */
+    }
+
+    /****** Banner ******/
+    main {
+        height: 100vh;
+    }
+
+    main h1 {
+        font-size: 6.5em;
+    }
+
+    main h2 {
+        font-size: 4em;
+    }
+
+
+
+}
+
+
+
+/* Rodapé */
+.Flex6 {
+    flex-direction: row-reverse;
+  }
+
+  #address {
+    padding-top: 50px;
+  }
+
+  #iconeLocal {
+    display: inline;
+  }
+
+  #iconeMapa {
+    display: none;
+  }
+
+  #googleMaps {
+    display: inline;
+  }
+
+  #social{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+  }
+
+
+
+
+
+
+/* Fim | Telas Grandes (FullHD / 4K / SmartTV) >>>>>*/
+

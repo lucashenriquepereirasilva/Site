@@ -1,0 +1,25 @@
+ <!--Contato-->
+        <address>
+            <div class="container">
+    
+            </div>
+        </address>
+        <!--Rodape-->
+        <footer id="rodape">
+            <div class="container">
+            <div>
+                <p>&#169;2024 - <span id="copyrightYear"></span><a href="https://gabrielxla.github.io/site">Lucas henrique</a></p>
+                </div>
+                <div id="social">
+                <a href="https://lucashenriquepereirasilva.github.io/Site/" target="_blank"><img src="images/github.png" alt="github"></a>
+        
+                  
+                <a href="https://instagram.com/lucashps05/?next=/" target="_blank">  <img src="images/instagram.png" alt="instagram"></a>
+            
+                <a href="www.youtube.com/@Ferrari" target="_blank">  <img src="images/youtube.png" alt="YouTube"></a>                         
+                </div>
+            </div>
+        </footer>
+        <a href="#inicio" id="topo"><img src="images/topo.png" alt="topo do site"></a>
+    </body>
+    </html>
