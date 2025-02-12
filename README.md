@@ -16,5 +16,6 @@ Lucas henrique pereira silva
 
 
 # site
-![image](https://lucashenriquepereirasilva.github.io/site/#inicio)
+![image](https://github.com/user-attachments/assets/efd95a25-2116-4a7c-98e2-cc2904fd6b0a)
+
 
