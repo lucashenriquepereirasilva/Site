@@ -16,4 +16,5 @@ Lucas henrique pereira silva
 
 
 # site
- <img href="img/qrcode.png">
+![image](https://lucashenriquepereirasilva.github.io/site/#inicio)
+
